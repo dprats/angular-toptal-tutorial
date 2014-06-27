@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+
+    <title>TopTal App</title>
+ 
+  </head>
+
+  <body ng-app="toptalApp" ng-controller="driversController">
+
+  <input type="text" ng-model="nameFilter" placeholder="Search.." />
+
+   <!-- This ng-view depends on the config routes set up on app.js -->
+  <ng-view></ng-view>
+    
+  
+
+
+
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/services.js"></script>
+        <script src="scripts/controllers/controller.js"></script>
+
+        <!-- endbuild -->
+</body>
+</html>
